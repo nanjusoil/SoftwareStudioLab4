@@ -10,7 +10,7 @@ public class Square extends Shape {
 		
 	}
 	
-	sacsacsacsa
+	sacsc
 	@Override
 	public Color getRandomColor() {		
 		// TODO Java 'Color' class takes 3 floats, from 0 to 1.
