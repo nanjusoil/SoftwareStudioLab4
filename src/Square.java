@@ -40,14 +40,14 @@ public class Square extends Shape {
 	@Override
 	public int getCenterX(int mouseX) {
 		// TODO Input mouse X position and return center X of square
-		return mouseX-shapeWidth/2;
+		return mouseX;
 	}
 
 
 	@Override
 	public int getCenterY(int mouseY) {
 		// TODO Input mouse Y position and return center Y of square
-		return mouseY-shapeWidth/2;
+		return mouseY;
 	}
 
 

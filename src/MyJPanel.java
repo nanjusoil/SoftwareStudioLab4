@@ -26,10 +26,12 @@ public class MyJPanel extends JPanel implements MouseMotionListener{
 
 	@Override
 	public void mouseDragged(MouseEvent e) {
-		
-			my_x=square.getCenterX(e.getX());
-			my_y=square.getCenterY(e.getY());
+		if( ( my_x + 100 >= e.getX() ) && ( my_y + 100 >= e.getY() ) &&  my_x  <= e.getX()  &&  my_y  <= e.getY() ){
+			my_x = square.getCenterX(e.getX()) - 50;
+			my_y =square.getCenterY(e.getY()) - 50;
 			paintComponent(this.getGraphics());
+		}
+	
 		
 		// TODO Get mouse dragged position and change suqare's position
 		
